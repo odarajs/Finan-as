@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f11445ff9c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Financeiro</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  
+
+  <header>
+    <img src="./img/Ellipse 13.svg" alt="logo" class="img_logo">
+    <div class="texto_logo">
+    <h2>Controle Financeiro</h2>
+  </div>
+    <i class="fa fa-bars" id="bar3"></i>
+        <div class="Menu">
+        <button class="bt_1">Cadastro de transações</button>
+        <button class="bt_2">Limpar dados</button>
+         </div>
+  </header>
+
+  <div class="todos">
+    <div class="principal">
+      <div class="filho">
+        <div class="h3_exemplo">
+          <h3 class="exemplo">Nova Transação</h3>
+          </div>
+          <div class="vo">
+            <div class="sobrinho">
+          <div class="campo_1">
+        <label class="tipo" for="substrato_imprime">Tipo de Transação</label>
+     <select class="Transação" name="substrato_imprime" id="substrato_imprime" value="" style="height: 40px; border-radius: 4px; border-color:#979797; border-style: solid;">
+        <option value="">Selecione</option>
+        <option value="TRANSPARENTE">Compra</option>
+     </select>
+    </div>
+    <div class="campo_2">
+     <label for="" class="Nome">Nome da Mercadoria</label>
+       <input type="text" class="Tipo-nome" style="height: 32px; border-radius: 4px; border-color: #979797; border-style: solid;" >
+       </div>
+       <div class="campo_3">
+       <label for="" class="Valor">Valor</label>
+       <input type="number" style="height: 32px; border-radius: 4px; border-color: #979797; border-style: solid;" class="Result-valor" placeholder="R$ 0,00">
+       </div>
+      </div>
+      <div class="campo_4">
+      <button class="bt">Adiciona Transação</button>
+    </div>
+     </div>
+    </div>
+
+     <div class="extrato">
+      <div class="h2_extra">
+        <h3 class="tr_extra">Extrato de transações</h3>
+      <table>
+        <tr>
+          <th class="af1">Mercadoria</th>
+          <th class="af2">Valor</th>
+        </tr>
+        <tr>
+          <td>+ lorem dados dos valores</td>
+          <td>R$12.999,99</td>
+        </tr>
+        <tr>
+          <td>- Desconto</td>
+          <td>R$99,99</td>
+        </tr>
+        <tr>
+          <td>+ Seguro</td>
+          <td>R$9,99</td>
+        </tr>
+        <tr>
+          <td  style="font-weight: bold;">Total</td>
+          <td style="font-weight: bold;">R$12.909,90</td>
+        </tr>
+        <tr>
+          <td>
+            <span 
+            class="lucro" style="font-weight: normal; font-size: 10px;font-style: normal;" >(LUCRO)
+           </span>
+        </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+     </div>
+     </div>
+     <footer>
+       <div class="footer"></div>
+     </footer>
+        </div>
+
+</body>
+</html>

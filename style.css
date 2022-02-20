@@ -1,0 +1,244 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+            
+           header{
+               display: flex;
+               background-color: #E0E0E0;
+               justify-content: space-evenly;
+               align-items: center;
+               margin: -8px 0px 50px 0px;
+              }
+           .texto_logo{
+               margin-right: 300px;
+           }
+           .Menu{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 350px;
+               height: 40px;
+               background-color: #FFFFFF;
+               margin-right: 100px;
+           }
+           .bt_1, .bt_2{
+               border-bottom: none;
+               border-left: none;
+               border-top: none;
+               background-color: transparent;
+               font-size: 16px;
+               border-right-color: #979797;
+               color: #333333;
+               margin-bottom: 2px;
+           }
+           .bt_2, .bt_1:last-child{
+               border-right: none;
+           }
+        
+
+           .principal{
+               display: flex;
+               flex-direction: row;
+               width: 100%;
+               align-items: center;
+               justify-content: center;
+           }
+           .todos{
+              display: flex;
+              justify-content: center;
+           }
+           .filho{
+               display: flex;
+               width: 400px;
+               height: 344px;
+               border: 1px solid #979797;
+               flex-direction: column;
+               border-radius: 4px;
+           }
+           input, select{
+               width: 370px;
+               margin: 10px 10px 10px 10px;
+               justify-content: center;
+           }
+        label{
+             margin-left: 10px;
+        }
+        .campo_4{
+           display: flex;
+           justify-content: center;
+        }
+        .bt{
+            width: 370px;
+            height: 32px;
+            background-color: #333333;
+            color: #FFFFFF;
+            border-radius: 4px;
+        }
+        .exemplo{
+            text-align: center;
+        }
+        .extrato{
+            display: flex;
+            width: 680px;
+            height: 281px;
+            margin-left: 60px;
+        }
+        table{
+            display: flex;
+            align-items: center;
+        }
+        td, tr{
+            display: flex;
+            justify-content: space-around;
+            width:680px;
+            border-bottom: 1px solid #979797
+        }
+        .lucro{
+            margin-left: 350px;
+        }
+        .tr_extra{
+            text-align: center;
+        }
+        td, tr:last-child{
+            border-bottom: none;
+
+          }
+        td,tr:nth-last-child(2){
+            border-bottom: none;
+        }
+        #bar3{
+            display: none;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 8px;
+            background:black;
+        }
+
+        @media screen and (max-width: 1112px){
+            
+            header{
+                width: 1112px;
+            }
+            .extrato{
+                width: 550px;
+                height: 281px;
+            }
+            .campo{
+                margin-left: 100px;
+            }
+            td, tr{
+                width: 550px;
+            }
+        }
+
+        @media screen and (max-width: 768px){
+
+            .todos{
+                width: 728px;
+            }
+            .principal{
+                flex-direction: column;
+                border: none;
+                width: 100%;
+             }
+
+             .sobrinho{
+                 display: flex;
+                 flex-direction: row;
+                 width: 100%;
+                 height: 80px;
+             }
+             .filho{
+                 width: 728px;
+                 height: 189px;
+                 border-radius: 4px;
+             }
+             input, select{
+                width: 100%;
+            }
+
+            .campo_1, .campo_2,.campo_3{
+                margin-right: 30px;
+            }
+            .campo_4{
+                justify-content: right;
+                margin-right: 13px;
+            }
+            .bt{
+                width: 185px;
+            }
+            .Menu{
+                display: none;
+            }
+            #bar3{
+                display: flex;
+            }
+            header{
+                width: 728px;
+            }
+            .extrato{
+                width: 728px;
+                margin-right: 50px;
+            }
+            td, tr{
+                width: 728px;
+            }
+            table{
+                margin-top: 30px;
+            }
+            .h2_extra{
+                margin-top: 50px;
+            }
+        }
+        @media screen and (max-width: 411px){
+            .filho{
+                width: 371px;
+                height: 380px;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+            }
+            .sobrinho{
+                flex-direction: column;
+            }
+            .campo_4{
+                margin-top: 160px;
+            }
+            .bt{
+                width: 350px;
+                border-radius: 4px;
+            }
+            header{
+                width: 411px;
+                justify-content: space-around;
+            }
+            .todos{
+                width: 411px;
+            }
+
+            .extrato{
+                width: 411px;
+            }
+            td,tr{
+                width: 411px;
+            }
+            .lucro{
+                margin-left: 200px;
+              }
+              .img_logo{
+                  margin-left: -50px;
+              }
+              .texto_logo{
+                  margin-left: -100px;
+              }
+
+              #bar3{
+                  margin-left: -400px;
+              }
+              .principal{
+                  width: 100%;
+              }
+        }
