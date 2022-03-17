@@ -1,40 +1,42 @@
 *{
     font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
-            
-           header{
-               display: flex;
-               background-color: #E0E0E0;
-               justify-content: space-evenly;
-               align-items: center;
-               margin: -8px 0px 50px 0px;
-              }
-           .texto_logo{
-               margin-right: 300px;
-           }
-           .Menu{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               width: 350px;
-               height: 40px;
-               background-color: #FFFFFF;
-               margin-right: 100px;
-           }
-           .bt_1, .bt_2{
-               border-bottom: none;
-               border-left: none;
-               border-top: none;
-               background-color: transparent;
-               font-size: 16px;
-               border-right-color: #979797;
-               color: #333333;
-               margin-bottom: 2px;
-           }
-           .bt_2, .bt_1:last-child{
-               border-right: none;
-           }
-        
+
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #E0E0E0;
+                height: 60px;
+            }
+            #nav_list{
+                list-style: none;
+                display: flex;
+
+            }
+            #nav_list li{
+             letter-spacing: 10px;
+             margin-left: 0px;
+
+            }
+            .aberto-menu-btn,.fechado-menu-btn, #chk{
+                display: none;
+            }
+            .bt_1, .bt_2{
+                width: 350px;
+                height: 40px;
+                border-left: none;
+                border-top: none;
+                border-bottom: none;
+                background-color: #FFFFFF;
+            }
+
+            .bt_2:last-child{
+                border-right: none;
+            }
 
            .principal{
                display: flex;
@@ -42,10 +44,14 @@
                width: 100%;
                align-items: center;
                justify-content: center;
+               padding-top: 50px;
            }
            .todos{
               display: flex;
               justify-content: center;
+           }
+           .h3_exemplo{
+               padding-bottom: 20px;
            }
            .filho{
                display: flex;
@@ -54,9 +60,11 @@
                border: 1px solid #979797;
                flex-direction: column;
                border-radius: 4px;
+               padding-top: 40px;
            }
            input, select{
                width: 370px;
+               height: 32px;
                margin: 10px 10px 10px 10px;
                justify-content: center;
            }
@@ -66,6 +74,7 @@
         .campo_4{
            display: flex;
            justify-content: center;
+           padding-top: 20px;
         }
         .bt{
             width: 370px;
@@ -73,6 +82,7 @@
             background-color: #333333;
             color: #FFFFFF;
             border-radius: 4px;
+            
         }
         .exemplo{
             text-align: center;
@@ -98,6 +108,7 @@
         }
         .tr_extra{
             text-align: center;
+            padding-bottom: 40px;
         }
         td, tr:last-child{
             border-bottom: none;
@@ -137,22 +148,26 @@
         @media screen and (max-width: 768px){
 
             .todos{
-                width: 728px;
+                width: 100%;
+                max-width: 728px;
             }
             .principal{
                 flex-direction: column;
                 border: none;
                 width: 100%;
+                max-width: 728px;
              }
 
              .sobrinho{
                  display: flex;
                  flex-direction: row;
                  width: 100%;
+                 max-width: 728px;
                  height: 80px;
              }
              .filho{
                  width: 728px;
+                 max-width: 728px;
                  height: 189px;
                  border-radius: 4px;
              }
@@ -173,6 +188,11 @@
             .Menu{
                 display: none;
             }
+
+            input[type="checkbox"]{
+                display: none;
+            }
+
             #bar3{
                 display: flex;
             }
@@ -191,6 +211,43 @@
             }
             .h2_extra{
                 margin-top: 50px;
+            }
+
+            #nav_list{
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 252px;
+                height: 100%;
+                background-color: #333333;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                transition: 0.7s;
+            }
+            #nav_list li{
+                margin-left: 0;
+            }
+            .aberto-menu-btn, .fechado-menu-btn{
+                display: block;
+            }
+            #chk:checked ~ ul{
+                right:0;
+            }
+            .fechado-menu-btn{
+                color: aliceblue;
+                position:absolute;
+                top: 20px;
+                left: 20px;
+            }
+            .bt_1, .bt_2{
+                position: relative;
+                top: 62px;
+                margin-top: 20px;
+                background-color: transparent;
+                color: #FFFFFF;
+                font-size: 16px;
+                border: transparent;
             }
         }
         @media screen and (max-width: 411px){
@@ -228,17 +285,13 @@
             .lucro{
                 margin-left: 200px;
               }
-              .img_logo{
-                  margin-left: -50px;
-              }
               .texto_logo{
-                  margin-left: -100px;
-              }
-
-              #bar3{
-                  margin-left: -400px;
+                  padding-left: 30px;
               }
               .principal{
                   width: 100%;
               }
-        }
+              #nav_list{
+                  width: 351px;
+              }
+       }
