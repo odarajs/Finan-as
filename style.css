@@ -230,8 +230,9 @@
             }
             .aberto-menu-btn, .fechado-menu-btn{
                 display: block;
+                cursor: pointer;
             }
-            #chk:checked ~ ul{
+            #chk:checked ~ .menu{
                 right:0;
             }
             .fechado-menu-btn{
